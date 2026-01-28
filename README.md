@@ -7,7 +7,7 @@ AI for Ireland Quest project focused on higher education.
 The project explores the use of agentic, human-in-the-loop AI to:
 - support personalised feedback on assessments,
 - provide indicative grading as a reference for lecturers,
-- improve fairness across multiple graders,
+- improve fairness across multiple examiners,
 - support learning for technical software (e.g. CAD, LTSpice),
 while keeping all academic decisions under lecturer control.
 
