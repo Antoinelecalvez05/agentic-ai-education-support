@@ -13,7 +13,7 @@ For each question:
     Generate explanation for lost marks
 
 Compare with similar anonymised copies,
-including those corrected by different graders
+including those corrected by different examiners
 
 Generate indicative grade (lecturer reference only)
 Generate personalised feedback report
