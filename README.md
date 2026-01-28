@@ -14,6 +14,8 @@ while keeping all academic decisions under lecturer control.
 ## Repository Contents
 - feedback_agent_pseudocode.md
 - learning_support_agent_pseudocode.md
+- sample_feedback_output.md
+
 
 ## Note
 This repository doesn't contain a deployed AI system.
