@@ -1,0 +1,13 @@
+Question: Explain Ohm's Law and calculate the current when V = 12V and R = 4 ohms.
+Total: 6 marks.
+
+Marking scheme:
+- Correctly explains that Ohm's Law describes the relationship between voltage, current and resistance: 2 marks.
+- Gives the correct formula V = IR or I = V/R: 2 marks.
+- Correctly calculates I = 12 / 4 = 3A with the correct unit: 2 marks.
+
+Common mistakes:
+- Missing the formula.
+- Confusing voltage, current and resistance.
+- Correct calculation but missing the unit.
+- Using addition instead of division.

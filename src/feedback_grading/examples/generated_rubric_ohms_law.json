@@ -1,0 +1,47 @@
+{
+  "assignment_id": "ENG_ELEC_001",
+  "question": "Explain Ohm's Law and calculate the current when V = 12V and R = 4 ohms.",
+  "criteria": [
+    {
+      "id": "C1",
+      "title": "Explanation of Ohm's Law",
+      "max_points": 2,
+      "expected_elements": [
+        "Describes the relationship between voltage, current, and resistance"
+      ],
+      "common_errors": [
+        "Confusing voltage, current, and resistance"
+      ],
+      "feedback_guidance": "Ensure the explanation clearly states the relationship between the three quantities.",
+      "evidence_required": true
+    },
+    {
+      "id": "C2",
+      "title": "Correct Formula",
+      "max_points": 2,
+      "expected_elements": [
+        "Provides the formula V = IR or I = V/R"
+      ],
+      "common_errors": [
+        "Missing the formula"
+      ],
+      "feedback_guidance": "The formula must be explicitly stated.",
+      "evidence_required": true
+    },
+    {
+      "id": "C3",
+      "title": "Calculation and Unit",
+      "max_points": 2,
+      "expected_elements": [
+        "Correctly calculates I = 12 / 4 = 3A",
+        "Includes the correct unit (A)"
+      ],
+      "common_errors": [
+        "Correct calculation but missing the unit",
+        "Using addition instead of division"
+      ],
+      "feedback_guidance": "The calculation must be accurate, and the unit must be included.",
+      "evidence_required": true
+    }
+  ]
+}
