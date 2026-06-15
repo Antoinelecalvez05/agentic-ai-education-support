@@ -1,0 +1,44 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_rounded_rectangle_plate",
+      "name": "base_plate",
+      "length": 240,
+      "width": 150,
+      "height": 12,
+      "corner_radius": 12,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "mirror_feature",
+      "mirror_plane": "YZ",
+      "plane_origin": [120, 0, 0],
+      "include_original": true,
+      "feature": {
+        "operation": "create_mounting_standoff",
+        "target": "base_plate",
+        "outer_diameter": 18,
+        "inner_diameter": 5,
+        "height": 16,
+        "position": [50, 40, 0],
+        "through_hole": true
+      }
+    },
+    {
+      "operation": "mirror_feature",
+      "mirror_plane": "YZ",
+      "plane_origin": [120, 0, 0],
+      "include_original": true,
+      "feature": {
+        "operation": "create_slot",
+        "target": "base_plate",
+        "length": 40,
+        "width": 10,
+        "depth": 12,
+        "position": [70, 100, 0],
+        "orientation": "x"
+      }
+    }
+  ]
+}

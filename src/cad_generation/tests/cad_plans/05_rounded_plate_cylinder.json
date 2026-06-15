@@ -1,0 +1,28 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_rounded_rectangle_plate",
+      "name": "base_plate",
+      "length": 240,
+      "width": 150,
+      "height": 12,
+      "corner_radius": 12,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_cylinder",
+      "name": "central_cylinder",
+      "diameter": 24,
+      "height": 20,
+      "position": [120, 75, 12]
+    },
+    {
+      "operation": "create_raised_border",
+      "target": "base_plate",
+      "border_width": 5,
+      "height": 6,
+      "scope": "outer_perimeter"
+    }
+  ]
+}

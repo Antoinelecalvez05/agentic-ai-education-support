@@ -1,0 +1,90 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "name": "base_plate",
+      "steps": [
+        {
+          "operation": "create_rounded_rectangle_plate",
+          "name": "plate",
+          "length": 200,
+          "width": 120,
+          "height": 10,
+          "corner_radius": 8,
+          "position": [0, 0, 0]
+        },
+        {
+          "operation": "create_hole_pattern",
+          "target": "plate",
+          "rows": 2,
+          "columns": 2,
+          "diameter": 5,
+          "depth": 10,
+          "first_position": [40, 30, 0],
+          "spacing_x": 120,
+          "spacing_y": 60
+        }
+      ]
+    },
+    {
+      "name": "cover",
+      "steps": [
+        {
+          "operation": "create_lid",
+          "name": "cover_plate",
+          "length": 200,
+          "width": 120,
+          "height": 4,
+          "corner_radius": 8,
+          "position": [0, 0, 0]
+        }
+      ]
+    },
+    {
+      "name": "screw",
+      "steps": [
+        {
+          "operation": "create_cylinder",
+          "name": "screw_body",
+          "diameter": 5,
+          "height": 18,
+          "position": [0, 0, 0]
+        }
+      ]
+    }
+  ],
+  "assembly": [
+    {
+      "part": "base_plate",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "cover",
+      "position": [0, 0, 14],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "screw",
+      "position": [40, 30, 14],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "screw",
+      "position": [160, 30, 14],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "screw",
+      "position": [40, 90, 14],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "screw",
+      "position": [160, 90, 14],
+      "rotation": [0, 0, 0]
+    }
+  ],
+  "assumptions": [],
+  "missing_information": []
+}

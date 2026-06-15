@@ -1,0 +1,51 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_box",
+      "name": "base_plate",
+      "length": 200,
+      "width": 120,
+      "height": 12,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_slot",
+      "target": "base_plate",
+      "length": 60,
+      "width": 12,
+      "depth": 12,
+      "position": [100, 60, 0],
+      "orientation": "x"
+    },
+    {
+      "operation": "create_counterbore_hole",
+      "target": "base_plate",
+      "hole_diameter": 6,
+      "depth": 12,
+      "counterbore_diameter": 12,
+      "counterbore_depth": 4,
+      "position": [40, 40, 0]
+    },
+    {
+      "operation": "create_countersink_hole",
+      "target": "base_plate",
+      "hole_diameter": 6,
+      "depth": 12,
+      "countersink_diameter": 12,
+      "countersink_angle": 90,
+      "position": [160, 40, 0]
+    },
+    {
+      "operation": "create_hole_pattern",
+      "target": "base_plate",
+      "rows": 2,
+      "columns": 3,
+      "diameter": 5,
+      "depth": 12,
+      "first_position": [50, 90, 0],
+      "spacing_x": 30,
+      "spacing_y": 15
+    }
+  ]
+}

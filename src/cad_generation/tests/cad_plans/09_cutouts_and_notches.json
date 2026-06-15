@@ -1,0 +1,49 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_rounded_rectangle_plate",
+      "name": "base_plate",
+      "length": 220,
+      "width": 140,
+      "height": 12,
+      "corner_radius": 10,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_rectangular_cutout",
+      "target": "base_plate",
+      "length": 45,
+      "width": 25,
+      "depth": 12,
+      "position": [70, 70, 0]
+    },
+    {
+      "operation": "create_slot",
+      "target": "base_plate",
+      "length": 55,
+      "width": 12,
+      "depth": 12,
+      "position": [145, 70, 0],
+      "orientation": "y"
+    },
+    {
+      "operation": "create_edge_notch",
+      "target": "base_plate",
+      "length": 32,
+      "width": 18,
+      "depth": 12,
+      "position": [0, 70, 0],
+      "edge": "left"
+    },
+    {
+      "operation": "create_edge_notch",
+      "target": "base_plate",
+      "length": 32,
+      "width": 18,
+      "depth": 12,
+      "position": [220, 70, 0],
+      "edge": "right"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_rounded_rectangle_plate",
+      "name": "base_plate",
+      "length": 220,
+      "width": 140,
+      "height": 12,
+      "corner_radius": 10,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_raised_border",
+      "target": "base_plate",
+      "border_width": 5,
+      "height": 6,
+      "scope": "outer_perimeter"
+    },
+    {
+      "operation": "create_mounting_standoff",
+      "target": "base_plate",
+      "outer_diameter": 18,
+      "inner_diameter": 5,
+      "height": 16,
+      "position": [50, 40, 0],
+      "through_hole": true
+    },
+    {
+      "operation": "create_rib",
+      "target": "base_plate",
+      "length": 80,
+      "thickness": 4,
+      "height": 12,
+      "position": [110, 70, 0],
+      "orientation": "x"
+    },
+    {
+      "operation": "create_gusset",
+      "target": "base_plate",
+      "length": 30,
+      "height": 20,
+      "thickness": 5,
+      "position": [150, 80, 0],
+      "orientation": "y"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "name": "long_bar",
+      "steps": [
+        {
+          "operation": "create_box",
+          "name": "bar",
+          "length": 100,
+          "width": 12,
+          "height": 8,
+          "position": [0, 0, 0]
+        },
+        {
+          "operation": "create_hole",
+          "target": "bar",
+          "diameter": 4,
+          "depth": 8,
+          "position": [20, 6, 0]
+        },
+        {
+          "operation": "create_hole",
+          "target": "bar",
+          "diameter": 4,
+          "depth": 8,
+          "position": [80, 6, 0]
+        }
+      ]
+    }
+  ],
+  "assembly": [
+    {
+      "part": "long_bar",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "long_bar",
+      "position": [0, 40, 0],
+      "rotation": [0, 0, 90]
+    },
+    {
+      "part": "long_bar",
+      "position": [0, 80, 0],
+      "rotation": [0, 0, 45]
+    },
+    {
+      "part": "long_bar",
+      "position": [0, 120, 0],
+      "rotation": [0, 0, 180]
+    }
+  ],
+  "assumptions": [],
+  "missing_information": []
+}

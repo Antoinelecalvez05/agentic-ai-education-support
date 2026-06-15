@@ -1,0 +1,54 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_box",
+      "name": "base_plate",
+      "length": 220,
+      "width": 130,
+      "height": 14,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_threaded_hole",
+      "target": "base_plate",
+      "thread": "M6",
+      "diameter": 5,
+      "depth": 12,
+      "position": [40, 40, 0]
+    },
+    {
+      "operation": "create_counterbore_hole",
+      "target": "base_plate",
+      "hole_diameter": 6,
+      "depth": 14,
+      "counterbore_diameter": 13,
+      "counterbore_depth": 5,
+      "position": [90, 40, 0]
+    },
+    {
+      "operation": "create_countersink_hole",
+      "target": "base_plate",
+      "hole_diameter": 6,
+      "depth": 14,
+      "countersink_diameter": 14,
+      "countersink_angle": 90,
+      "position": [140, 40, 0]
+    },
+    {
+      "operation": "create_cylindrical_boss",
+      "target": "base_plate",
+      "name": "boss_for_hole",
+      "diameter": 28,
+      "height": 18,
+      "position": [185, 40, 0]
+    },
+    {
+      "operation": "create_hole_on_boss",
+      "target": "boss_for_hole",
+      "diameter": 6,
+      "depth": 18,
+      "position": [185, 40, 0]
+    }
+  ]
+}

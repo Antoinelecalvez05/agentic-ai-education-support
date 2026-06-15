@@ -1,0 +1,26 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Secrets / local config
+.env
+.env.local
+
+# Generated CAD / simulation outputs
+outputs/
+uploads/
+generated/
+*.step
+*.stl
+*.fcstd
+*.log
+
+# Project-specific generated folders
+src/cad_generation/outputs/
+src/cad_generation/uploads/
+src/cad_generation/tests/outputs/
+
+# System files
+.DS_Store

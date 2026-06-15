@@ -1,0 +1,9 @@
+streamlit
+requests
+python-dotenv
+pydantic
+pandas
+openpyxl
+opencv-python
+pillow
+numpy

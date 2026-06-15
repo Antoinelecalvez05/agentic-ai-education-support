@@ -1,0 +1,44 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "name": "mounting_block",
+      "steps": [
+        {
+          "operation": "create_box",
+          "name": "block",
+          "length": 30,
+          "width": 20,
+          "height": 10,
+          "position": [0, 0, 0]
+        },
+        {
+          "operation": "create_hole",
+          "target": "block",
+          "diameter": 6,
+          "depth": 10,
+          "position": [15, 10, 0]
+        }
+      ]
+    }
+  ],
+  "assembly": [
+    {
+      "part": "mounting_block",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "mounting_block",
+      "position": [50, 0, 0],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "mounting_block",
+      "position": [100, 0, 0],
+      "rotation": [0, 0, 0]
+    }
+  ],
+  "assumptions": [],
+  "missing_information": []
+}

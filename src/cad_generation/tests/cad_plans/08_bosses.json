@@ -1,0 +1,47 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_box",
+      "name": "base_plate",
+      "length": 220,
+      "width": 130,
+      "height": 12,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_rectangular_boss",
+      "target": "base_plate",
+      "name": "rect_boss_1",
+      "length": 35,
+      "width": 22,
+      "height": 14,
+      "position": [45, 45, 0]
+    },
+    {
+      "operation": "create_cylindrical_boss",
+      "target": "base_plate",
+      "name": "cyl_boss_1",
+      "diameter": 28,
+      "height": 16,
+      "position": [110, 45, 0]
+    },
+    {
+      "operation": "create_mounting_standoff",
+      "target": "base_plate",
+      "name": "standoff_1",
+      "outer_diameter": 20,
+      "inner_diameter": 6,
+      "height": 18,
+      "position": [170, 45, 0],
+      "through_hole": true
+    },
+    {
+      "operation": "create_hole_on_boss",
+      "target": "cyl_boss_1",
+      "diameter": 6,
+      "depth": 16,
+      "position": [110, 45, 0]
+    }
+  ]
+}

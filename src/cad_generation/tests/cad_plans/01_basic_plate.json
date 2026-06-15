@@ -1,0 +1,26 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_box",
+      "name": "base_plate",
+      "length": 120,
+      "width": 80,
+      "height": 10,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_hole",
+      "target": "base_plate",
+      "diameter": 8,
+      "depth": 10,
+      "position": [30, 20, 0]
+    },
+    {
+      "operation": "create_chamfer",
+      "target": "base_plate",
+      "distance": 1,
+      "scope": "base_top_outer_edges"
+    }
+  ]
+}

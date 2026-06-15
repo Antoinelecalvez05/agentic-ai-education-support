@@ -1,0 +1,34 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_box",
+      "name": "base_plate",
+      "length": 180,
+      "width": 120,
+      "height": 14,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_rectangular_boss",
+      "target": "base_plate",
+      "name": "top_boss",
+      "length": 50,
+      "width": 30,
+      "height": 12,
+      "position": [90, 60, 0]
+    },
+    {
+      "operation": "create_fillet",
+      "target": "base_plate",
+      "radius": 2,
+      "scope": "base_outer_vertical_edges"
+    },
+    {
+      "operation": "create_chamfer",
+      "target": "base_plate",
+      "distance": 1,
+      "scope": "base_top_outer_edges"
+    }
+  ]
+}

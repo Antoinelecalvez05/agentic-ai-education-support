@@ -1,0 +1,68 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_rounded_rectangle_plate",
+      "name": "base_plate",
+      "length": 260,
+      "width": 160,
+      "height": 12,
+      "corner_radius": 12,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_linear_pattern",
+      "count": 4,
+      "spacing": [35, 0, 0],
+      "feature": {
+        "operation": "create_mounting_standoff",
+        "target": "base_plate",
+        "outer_diameter": 16,
+        "inner_diameter": 5,
+        "height": 14,
+        "position": [45, 35, 0],
+        "through_hole": true
+      }
+    },
+    {
+      "operation": "create_linear_pattern",
+      "count": 4,
+      "spacing": [35, 0, 0],
+      "feature": {
+        "operation": "create_hole",
+        "target": "base_plate",
+        "diameter": 5,
+        "depth": 12,
+        "position": [45, 125, 0]
+      }
+    },
+    {
+      "operation": "create_circular_pattern",
+      "count": 6,
+      "center": [130, 80, 0],
+      "axis": "Z",
+      "total_angle": 360,
+      "feature": {
+        "operation": "create_hole",
+        "target": "base_plate",
+        "diameter": 4,
+        "depth": 12,
+        "position": [160, 80, 0]
+      }
+    },
+    {
+      "operation": "create_circular_pattern",
+      "count": 4,
+      "center": [130, 80, 0],
+      "axis": "Z",
+      "total_angle": 360,
+      "feature": {
+        "operation": "create_cylindrical_boss",
+        "target": "base_plate",
+        "diameter": 12,
+        "height": 8,
+        "position": [130, 110, 0]
+      }
+    }
+  ]
+}

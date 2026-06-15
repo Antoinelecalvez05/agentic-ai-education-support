@@ -1,0 +1,37 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_box",
+      "name": "base_plate",
+      "length": 180,
+      "width": 120,
+      "height": 14,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_rectangular_pocket",
+      "target": "base_plate",
+      "length": 50,
+      "width": 30,
+      "depth": 4,
+      "position": [45, 60, 0]
+    },
+    {
+      "operation": "create_circular_pocket",
+      "target": "base_plate",
+      "diameter": 30,
+      "depth": 5,
+      "position": [105, 60, 0]
+    },
+    {
+      "operation": "create_recess",
+      "target": "base_plate",
+      "length": 45,
+      "width": 25,
+      "depth": 2,
+      "corner_radius": 4,
+      "position": [145, 60, 0]
+    }
+  ]
+}

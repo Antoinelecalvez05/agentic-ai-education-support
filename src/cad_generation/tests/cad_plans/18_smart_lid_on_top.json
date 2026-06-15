@@ -1,0 +1,53 @@
+{
+  "units": "mm",
+  "parts": [
+    {
+      "name": "enclosure_body",
+      "steps": [
+        {
+          "operation": "create_open_enclosure",
+          "name": "body",
+          "length": 180,
+          "width": 110,
+          "height": 40,
+          "wall_thickness": 4,
+          "bottom_thickness": 5,
+          "corner_radius": 8,
+          "position": [0, 0, 0]
+        }
+      ]
+    },
+    {
+      "name": "lid",
+      "steps": [
+        {
+          "operation": "create_lid",
+          "name": "lid_plate",
+          "length": 180,
+          "width": 110,
+          "height": 4,
+          "lip_height": 3,
+          "lip_width": 3,
+          "corner_radius": 8,
+          "position": [0, 0, 0]
+        }
+      ]
+    }
+  ],
+  "assembly": [
+    {
+      "part": "enclosure_body",
+      "position": [0, 0, 0],
+      "rotation": [0, 0, 0]
+    },
+    {
+      "part": "lid",
+      "place": "on_top_of",
+      "target": "enclosure_body",
+      "clearance": 2,
+      "rotation": [0, 0, 0]
+    }
+  ],
+  "assumptions": [],
+  "missing_information": []
+}

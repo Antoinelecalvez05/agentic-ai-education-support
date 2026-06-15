@@ -1,0 +1,61 @@
+{
+  "units": "mm",
+  "steps": [
+    {
+      "operation": "create_open_enclosure",
+      "name": "enclosure_body",
+      "length": 180,
+      "width": 110,
+      "height": 40,
+      "wall_thickness": 4,
+      "bottom_thickness": 5,
+      "corner_radius": 8,
+      "position": [0, 0, 0]
+    },
+    {
+      "operation": "create_recess",
+      "target": "enclosure_body",
+      "length": 70,
+      "width": 35,
+      "depth": 2,
+      "corner_radius": 4,
+      "position": [90, 55, 0]
+    },
+    {
+      "operation": "create_mounting_standoff",
+      "target": "enclosure_body",
+      "outer_diameter": 14,
+      "inner_diameter": 4,
+      "height": 18,
+      "position": [35, 30, 0],
+      "through_hole": true
+    },
+    {
+      "operation": "mirror_feature",
+      "mirror_plane": "YZ",
+      "plane_origin": [90, 0, 0],
+      "include_original": true,
+      "feature": {
+        "operation": "create_mounting_standoff",
+        "target": "enclosure_body",
+        "outer_diameter": 14,
+        "inner_diameter": 4,
+        "height": 18,
+        "position": [35, 80, 0],
+        "through_hole": true
+      }
+    },
+    {
+      "operation": "create_lid",
+      "name": "lid",
+      "target": "enclosure_body",
+      "length": 180,
+      "width": 110,
+      "height": 4,
+      "lip_height": 3,
+      "lip_width": 3,
+      "corner_radius": 8,
+      "position": [0, 0, 45]
+    }
+  ]
+}
