@@ -1,0 +1,36 @@
+{
+  "previous_answers": [
+    {
+      "copy_id": "copy_A001",
+      "answer": "Ohm's Law states that voltage equals current times resistance, V = IR. Therefore I = V/R = 12/4 = 3 A.",
+      "score": 6,
+      "max_score": 6,
+      "grader_id": "grader_1",
+      "lecturer_comment": "Complete answer with formula and units."
+    },
+    {
+      "copy_id": "copy_A002",
+      "answer": "Ohm's Law links voltage, current and resistance. 12 divided by 4 gives 3, but the unit is missing.",
+      "score": 4.5,
+      "max_score": 6,
+      "grader_id": "grader_2",
+      "lecturer_comment": "Good explanation but incomplete notation and missing unit."
+    },
+    {
+      "copy_id": "copy_A003",
+      "answer": "Current is voltage plus resistance, so the answer is 16.",
+      "score": 1,
+      "max_score": 6,
+      "grader_id": "grader_1",
+      "lecturer_comment": "Incorrect formula and calculation."
+    },
+    {
+      "copy_id": "copy_A004",
+      "answer": "The formula is I = V/R. With 12 volts and 4 ohms, current equals 3 amperes.",
+      "score": 5.5,
+      "max_score": 6,
+      "grader_id": "grader_2",
+      "lecturer_comment": "Almost complete, minor explanation missing."
+    }
+  ]
+}

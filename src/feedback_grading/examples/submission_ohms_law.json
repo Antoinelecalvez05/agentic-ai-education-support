@@ -1,0 +1,9 @@
+{
+  "student_id": "student_anonymised_001",
+  "answer": "Ohm's Law explains how voltage, current and resistance are linked in a circuit. The current depends on the voltage and the resistance. The calculation is I = 12 / 4 = 3.",
+  "metadata": {
+    "course": "Engineering Electricity",
+    "year": "first_year",
+    "submission_type": "short_answer"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "assignment_id": "ENG_ELEC_001",
+  "question": "Explain Ohm's Law and calculate the current when V = 12V and R = 4Ω.",
+  "criteria": [
+    {
+      "id": "C1",
+      "title": "Conceptual definition of Ohm's Law",
+      "max_points": 2,
+      "expected_elements": [
+        "voltage current resistance relationship",
+        "current is proportional to voltage",
+        "resistance limits current"
+      ],
+      "common_errors": [
+        "confusing resistance with current",
+        "describing the law without explaining the relationship"
+      ],
+      "feedback_guidance": "The student should clearly explain that Ohm's Law describes the relationship between voltage, current and resistance."
+    },
+    {
+      "id": "C2",
+      "title": "Correct formula",
+      "max_points": 2,
+      "expected_elements": [
+        "V = I R",
+        "I = V / R"
+      ],
+      "common_errors": [
+        "using addition instead of division",
+        "missing the formula"
+      ],
+      "feedback_guidance": "The student should explicitly state either V = IR or I = V/R."
+    },
+    {
+      "id": "C3",
+      "title": "Correct numerical calculation",
+      "max_points": 2,
+      "expected_elements": [
+        "12 / 4",
+        "3 A",
+        "current equals 3"
+      ],
+      "common_errors": [
+        "missing units",
+        "incorrect arithmetic"
+      ],
+      "feedback_guidance": "The calculation should show I = 12 / 4 = 3 A."
+    }
+  ]
+}
